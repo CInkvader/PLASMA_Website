@@ -1,0 +1,166 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* ************************************************************************ */
+
+.custom-font {
+    font-size: 15px; /* Set the font size to whatever fits best */
+    /* Slightly bold */
+    color: #ffffff; /* White color for text */
+    letter-spacing: 0.5px; /* Adjust letter spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-font:hover {
+    color: #808080; /* Change text color on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+.white-icon {
+    color: white;           /* Makes the SVG icon white */
+    position: relative;     /* Ensures the icon is positioned inside the flex container */
+    top: 0;                 /* Removes any top margin */
+    margin-top: 0;          /* Ensures no margin on top */
+    vertical-align: middle; /* Aligns the icon vertically in the flex container */
+    right: 25px;
+  }
+
+.main_navbar {
+    padding: 0;
+}
+
+/* ************************************************************************ */
+
+
+.footer .links img {
+    width: 26px;
+}
+
+.footer .links a {
+    text-decoration: none; /* Removes text decoration from the a tag around images */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+}
+
+    .footer .links {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 10%;
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+        .footer .container .list {
+            width: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+            .footer .container .list .list-content a {
+                text-decoration: none;
+            }
+
+            .footer .container .list .list-content h5 {
+                margin: 0 0 6px 0;
+                font-size: 12px;
+                color: rgb(128, 128, 128);
+                font-weight: 200;
+            }
+
+            .footer .container .list .list-content h5:hover {
+                color:white;
+            }
+
+                .footer .container .list h3 {
+                color: rgb(128, 128, 128);
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+    .footer .copyright {
+        margin: 15px;
+    }
+
+    .footer .copyright p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: rgb(128, 128, 128);
+        font-weight: 100;
+    }
+
+/* ************************************************************************ */
+
+.btn-primary {
+    transition: ease 0.1s;
+}
+
+.btn-primary:hover {
+    transform: scale(102%);
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+    border-color: white !important;
+    box-shadow: none !important;
+}
+
+.logreg_a {
+    position: relative;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+    .logreg_a::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .logreg_a:hover::after {
+        width: 100%;
+        left: 0;
+    }

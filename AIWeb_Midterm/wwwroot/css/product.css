@@ -1,0 +1,110 @@
+﻿.content.product .wrapper {
+    align-items: center;
+    padding: 2% 11% 0 11%;
+    gap: 4%;
+}
+
+    .content.product .wrapper .description {
+        padding: 20px 0;
+        max-width: 48%;
+    }
+
+        .content.product .wrapper .description h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .content.product .wrapper .description p,
+        .content.product p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 25px 0;
+            color: white;
+        }
+
+        .content.product .wrapper .description a {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    .content.product .wrapper .image-container {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 48%;
+    }
+
+        .content.product .wrapper .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+/* ************************************************************************ */
+
+.product_solution {
+    padding: 5% 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .product_solution h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        color: white;
+        width: 100%;
+    }
+
+    .product_solution p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: white;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .product_solution img {
+        padding: 3rem 11%;
+        width: 70%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+/* ************************************************************************ */
+
+.product_implementation .el_list {
+    grid-template-columns: 1fr 1fr;
+}
+
+.product_implementation .el_item_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_implementation img {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img_centered {
+    padding: 3rem 11%;
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}

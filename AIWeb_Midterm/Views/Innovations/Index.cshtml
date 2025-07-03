@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Innovations";
+}
+
+<img class="bg_image" src="~/images/backgrounds/bg-1.jpg" alt="Placeholder Image">
+
+<link rel="stylesheet" href="~/css/innovation.css" asp-append-version="true" />
+
+<section class="header secondary">
+    <div class="header_bg">
+        <img src="~/images/Headers/header-4.png" alt="Placeholder Image">
+    </div>
+    <div class="info">
+        <div class="description">
+            <h2>Advanced Tracking and Cleanup Pipeline</h2>
+            <p>
+                Explore innovative solutions for tracking plastic waste and sustainably removing debris from rivers and coasts. 
+                Our approach protects ecosystems and promotes a cleaner, healthier planet.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- --------------------------------------------------------------------- -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark py-3 mid_navbar">
+    <div class="container-fluid">
+
+        <!-- Hamburger Toggle for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Left Side Links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar2">
+                <li class="nav-item ">
+                    <a class="nav-link custom-font" aria-current="page" href="#innov_1">Cleaning Robots</a>
+                </li>
+                <li class="nav-item ms-3 ">
+                    <a class="nav-link custom-font" href="#innov_2">Plastic Monitoring System</a>
+                </li>
+                <li class="nav-item ms-3 ">
+                    <a class="nav-link custom-font" href="#innov_3">Mobile Collection Units</a>
+                </li>
+                <li class="nav-item ms-3 ">
+                    <a class="nav-link custom-font" href="#innovation_goals">Future Goals</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- --------------------------------------------------------------------- -->
+
+<div class="radial_gradient">
+    <section class="content innovations" id="innov_1">
+        <div class="wrapper row g-0 custom-background">
+            <!-- Description Section -->
+            <div class="col-md-6 description">
+                <h2>Cleaning Robots</h2>
+                <p>
+                    Marine plastics severely threaten wildlife and ecosystems. With most pollution originating from land via waterways, reducing plastic flow into oceans is crucial. 
+                    Timely removal of floating waste from rivers, coasts, and marinas is vital to protect aquatic environments and limit pollution.
+                </p>
+                <button onclick="window.location.href='https://www.mdpi.com/2077-1312/10/11/1620';" class="btn_lrn">LEARN MORE</button>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 image-container">
+                <img src="~/images/Innovations/CleaningRobots.jpg" alt="Placeholder Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="content innovations" id="innov_2">
+        <div class="wrapper row g-0 custom-background">
+            <div class="col-md-6 image-container">
+                <img src="~/images/Innovations/PlasticMonitoring.jpg" alt="Placeholder Image">
+            </div>
+            <div class="col-md-6 description">
+                <h2>Plastic Monitoring System</h2>
+                <p>
+                    Tracking plastic waste is crucial for tackling global pollution, yet comprehensive life-cycle monitoring systems are lacking. 
+                    Current methods focus on limited stages, like waste management inputs and marine debris. We aim to bridge this gap with advanced tracking solutions, 
+                    enabling targeted strategies to protect ecosystems and drive sustainable change.
+                </p>
+                <button onclick="window.location.href='https://nap.nationalacademies.org/read/26132/chapter/8';" class="btn_lrn">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content innovations" id="innov_3">
+        <div class="wrapper row g-0 custom-background">
+            <!-- Description Section -->
+            <div class="col-md-6 description">
+                <h2>Mobile Collection Units</h2>
+                <p>
+                    Manta systems revolutionize waste collection by efficiently removing debris from water bodies. Designed for sustainability, they target floating waste in rivers, 
+                    coastal areas, and marinas, preventing plastic from reaching the ocean and protecting aquatic ecosystems.
+                </p>
+                <button onclick="window.location.href='https://www.up-to-us.veolia.com/en/stop-pollution/manta-cleaning-ship-ocean-plastic-waste?form=MG0AV3';" class="btn_lrn">LEARN MORE</button>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 image-container">
+                <img src="~/images/Innovations/MobileCollection.jpg" alt="Placeholder Image">
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- --------------------------------------------------------------------- -->
+
+<section class="innovation_goals" id="innovation_goals">
+    <h1 class="fading-title">FUTURE GOALS</h1>
+    <p>
+        To overcome the current limitations of our AI-based solution, future efforts will focus on enhancing the reliability, precision, and scalability of the system. 
+        This includes improving UAS hardware to address issues like battery life and weather resilience, ensuring uninterrupted operations. 
+        Advanced geospatial mapping techniques will be integrated to mitigate inaccuracies in metadata and enhance the quality of aerial surveys. Additionally, 
+        upgrading the AI model to achieve higher accuracy in detecting, distinguishing, and enumerating plastic litter will be prioritized. 
+        Future development will also explore combining UAS data with satellite imagery and ground-based observations to ensure comprehensive coverage. 
+        By addressing these challenges, the solution aims to provide a more robust and efficient system for monitoring and restoring aquatic ecosystems, 
+        further supporting global environmental preservation efforts.
+    </p>
+</section>

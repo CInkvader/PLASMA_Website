@@ -1,0 +1,19 @@
+﻿@page
+@model ConfirmEmailChangeModel
+@{
+    ViewData["Title"] = "Confirm email change";
+}
+
+<img class="bg_image" src="~/images/backgrounds/bg-1.jpg" alt="Placeholder Image">
+
+<div class="radial_gradient" style="display: flex; justify-content: center; align-items: center;height: 75vh">
+    <div style="width: 30%">
+        <h1 style="text-align: center; color: white;">@ViewData["Title"]</h1>
+        <partial name="_StatusMessage" model="Model.StatusMessage" />
+        @* <button class="w-100 btn btn-primary"
+                style="border-radius: 50px; height: 100%; border: 0; font-weight: 400; font-size: 1rem;"
+                onclick="window.location.href='/Identity/Account/Login';">
+            Continue
+        </button> *@
+    </div>
+</div>

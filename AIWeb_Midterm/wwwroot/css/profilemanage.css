@@ -1,0 +1,7 @@
+﻿.nav-pills .nav-link.active {
+    background: #55595c;
+}
+
+.managenavsel:hover {
+    background: #282828;
+}

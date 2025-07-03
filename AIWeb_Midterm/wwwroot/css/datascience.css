@@ -1,0 +1,149 @@
+﻿.content.datasci .wrapper {
+    align-items: center;
+    padding: 2% 11% 0 11%;
+    gap: 4%;
+}
+
+    .content.datasci .wrapper .description {
+        padding: 20px 0;
+        max-width: 48%;
+    }
+
+        .content.datasci .wrapper .description h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .content.datasci .wrapper .description p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 25px 0;
+            color: white;
+        }
+
+        .content.datasci .wrapper .description a {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    .content.datasci .wrapper .image-container {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 48%;
+    }
+
+        .content.datasci .wrapper .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+/* ************************************************************************ */
+
+.datasci_datacol,
+.datasci_model,
+.datasci_model_2 {
+    padding: 5% 0 0 0;
+    margin: 0;
+}
+
+.datasci_stake {
+    padding: 5% 0;
+}
+
+.datasci_stake img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+    .datasci_model .image,
+    .datasci_model_2 .image {
+        width: 100%;
+        margin: 2.5% 0;
+    }
+
+        .datasci_model .image img,
+        .datasci_model_2 .image img{
+            object-fit: cover;
+        }
+
+.datasci_info h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: white;
+    width: 100%;
+}
+
+.datasci_info h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.datasci_info p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    padding-bottom: 4rem;
+}
+
+.datasci_info .ds_img_right {
+    width: 90%;
+    overflow: clip;
+    align-self: start;
+    justify-self: right;
+}
+
+.datasci_info .ds_img_left {
+    width: 90%;
+    overflow: clip;
+    align-self: start;
+    justify-self: start;
+}
+
+.datasci_info img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: fill;
+}
+
+.datasci_info .ds_content {
+    margin: 0 11%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.span_two {
+    grid-column: span 2;
+}
+
+/* ************************************************************************ */
+
+.datasci_tech img {
+    height: 80px;
+    width: 80px;
+}
+
+.datasci_tech a:hover {
+    transform: scale(110%);
+}
+
+.datasci_tech .techimg {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}

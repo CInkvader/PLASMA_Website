@@ -1,0 +1,33 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Views/Shared/_Layout.cshtml";
+    }
+}
+<link rel="stylesheet" href="~/css/profilemanage.css" asp-append-version="true" />
+
+<img class="bg_image" src="~/images/backgrounds/bg-1.jpg" alt="Placeholder Image">
+
+<div class="radial_gradient" style="display: flex; justify-content: center;">
+    <div class="radial_gradient" style="height: 60vh; width:40%; margin: 100px; padding: 20px 0;
+                                        border: 1px solid #55595C; border-radius:25px; background: #151515;">
+        <h1 style="padding-left: 20px; color: white; text-align: center">Manage Profile</h1>
+        <h3 style="padding-left: 20px; padding-top: 25px; color: white; text-align: center">Update personal information</h3>
+        <hr style="color:white;"/>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0 0 0 12px;">
+                <partial name="_ManageNav" style="width: 100%"/>
+            </div>
+            <div class="col-md-8">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}
