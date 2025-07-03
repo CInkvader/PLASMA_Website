@@ -41,8 +41,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
 app.UseAuthentication(); // FOR USER ROLE AND VIEWS
+app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllerRoute(
