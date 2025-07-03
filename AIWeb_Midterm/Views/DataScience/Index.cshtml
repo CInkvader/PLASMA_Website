@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="~/css/datascience.css" asp-append-version="true" />
 
-<img class="bg_image" src="~/images/backgrounds/bg-1.jpg" alt="Placeholder Image">
+<img class="bg_image" src="~/images/Backgrounds/bg-1.jpg" alt="Placeholder Image">
 
 <section class="header secondary">
     <div class="header_bg">
@@ -94,14 +94,14 @@
                 The process begins with data preparation. datasets, such as MARIDA and Kaggle’s Garbage Classification dataset, are needed for training. These datasets are gonna be cleaned and organized into appropriate categories, such as HDPE, LDPE, PP, PS, and non-plastic elements like sand or vegetation. Data augmentation techniques, including rotation, flipping, and brightness adjustments, are applied to increase diversity and ensure the model generalizes well to unseen data.
             </p>
             <div class="image span_two">
-                <img src="~/images/datascience/ds-2.png" alt="Placeholder Image">
+                <img src="~/images/DataScience/ds-2.png" alt="Placeholder Image">
             </div>
             <p class="span_two" style="padding: 0 0 2rem 0; text-indent:2rem;">
                 For the model, we will be utilizing APLASTIC-Q. It is based on two trained convolutional neural networks, the Plastic Litter Detector (PLD) which detects plastic in the image, and the Plastic Litter Quantifier (PLQ) which distincts and quantifies between plastic litter types. For training purposes, 80% of the dataset will be randomly sampled and will be used for training while the remaining 20% will be split between validation and testing. The integration of the two components involves a pipeline where PLD-CNN detects plastic regions, and PLQ-CNN classifies and quantifies the detected items.
             </p>
             
             <div class="image ds_img_left">
-                <img src="~/images/datascience/ds-3.jpg" alt="Placeholder Image">
+                <img src="~/images/DataScience/ds-3.jpg" alt="Placeholder Image">
             </div>
             <p style="padding: 0; text-indent:2rem; align-self: center;">
                 To evaluate the model's accuracy, a confusion matrix will be used to compare the AI’s predictions against the ground truth across different litter classes.
@@ -121,7 +121,7 @@
                 Once the model is trained and evaluated, the model is deployed to process aerial images stored in Amazon S3. These images, captured by drones and organized by location and date, are retrieved for batch processing. The outputs will determine the data to be used for the web-based platform heat map highlighting plastic concentration zones.
             </p>
             <div class="image span_two">
-                <img src="~/images/datascience/ds-4.png" alt="Placeholder Image">
+                <img src="~/images/DataScience/ds-4.png" alt="Placeholder Image">
             </div>
             <p class="span_two" style="padding: 0; text-indent:2rem;">
                 To ensure long-term performance, the system undergoes continuous improvement. New images collected from UASs are periodically annotated using CVAT and incorporated into the training pipeline, allowing the model to adapt to changing conditions. This approach ensures the APLASTIC-Q system remains accurate, scalable, and effective in supporting the fight against aquatic plastic pollution.
@@ -148,7 +148,7 @@
         <h1 class="fading-title">BUDGET</h1>
         <div class="ds_content">
             <div class="image span_two">
-                <img src="~/images/datascience/ds-7.png" alt="Placeholder Image">
+                <img src="~/images/DataScience/ds-7.png" alt="Placeholder Image">
             </div>
         </div>
     </section>
