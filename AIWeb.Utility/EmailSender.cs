@@ -25,7 +25,11 @@ namespace AIWeb.Utility
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException("Missing emailsettings.json file.");
+                settings = new EmailSettings
+                {
+                    SenderEmail = Environment.GetEnvironmentVariable("SenderEmail") ?? throw new InvalidOperationException("Missing environment variables for EmailSender"),
+                    AppPassword = Environment.GetEnvironmentVariable("AppPassword") ?? throw new InvalidOperationException("Missing environment variable for EmailSender")
+                };
             }
         }
 
