@@ -1,0 +1,246 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+
+
+<img class="bg_image" src="~/images/Home/bg.png" alt="background" />
+
+<section class="carousal_body">
+    <div class="carousel">
+        <div class="slides">
+            <div class="slide active">
+                <img src="~/images/Home/slide-3.jpg" alt="slide"/>
+                <div class="slide-info">
+                    <h1>Inspiring Solutions through AI technologies</h1>
+                    <p>
+                        Leveraging UASs, computer vision, and GPS technologies to tackle plastic pollution in aquatic environments.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Project")#product_solution'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="~/images/Home/slide-2.jpg" alt="slide"/>
+                <div class="slide-info">
+                    <h1>Empowering Change through Data Science</h1>
+                    <p>
+                        Discover the data science driving our AI-powered solutions to tackle marine plastic pollution.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Implementation")'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="~/images/Home/slide-4.png" alt="slide"/>
+                <div class="slide-info">
+                    <h1>Innovating Solutions with AI</h1>
+                    <p>
+                        Leveraging cutting-edge technologies and robotics to combat marine plastic pollution.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Innovations")#innov_3'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="~/images/Home/slide-1.jpg" alt="slide"/>
+                <div class="slide-info">
+                    <h1>DJI Mavic Pro</h1>
+                    <p>
+                        A small and light foldable drone with the new OcuSync transmission system, perfect for long range deployment.
+                    </p>
+                    <button onclick="window.open('https://www.dji.com/global/mavic/info', '_blank')">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="indicators">
+            <div class="indicator-container" data-slide="0">
+                <button class="indicator"></button>
+                <h3 class="carousel-des active">AI Driven Technology</h3>
+            </div>
+            <div class="indicator-container" data-slide="1">
+                <button class="indicator"></button>
+                <h3 class="carousel-des">Data Science</h3>
+            </div>
+            <div class="indicator-container" data-slide="2">
+                <button class="indicator"></button>
+                <h3 class="carousel-des">Cleaning Robots</h3>
+            </div>
+            <div class="indicator-container" data-slide="3">
+                <button class="indicator"></button>
+                <h3 class="carousel-des">DJI Mavic Pro</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<section class="card_carousel">
+    <div class="cc_desc">
+        <h1>Leveraging Technologies</h1>
+        <p>Our innovative approach combines advanced satellite data to identify marine debris amidst various aquatic environments, empowering AI models to accurately detect and address plastic waste.</p>
+    </div>
+
+    <div class="wrapper">
+        <ul class="cc_list">
+            <li class="cc_card">
+                <a href="https://marine-debris.github.io/" target="_blank">
+                    <div><img src="~/images/DataScience/ds-1.png" alt="img" style="padding:1%; border-radius: 2.5%"/></div>
+                    <div class="cc_card_desc">
+                        <h5>MARIDA Dataset</h5>
+                        <p>The first dataset based on the multispectral Sentinel-2 (S2) satellite data, which can distinguish Marine Debris from various marine features that co-exist.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cc_card">
+                <a href="https://www.cvat.ai/" target="_blank">
+                    <div><img src="~/images/Home/cvat.jpg" alt="img" style="padding:1%; border-radius: 2.5%" /></div>
+                    <div class="cc_card_desc">
+                        <h5>Computer Vision Annotation Tool</h5>
+                        <p>By leveraging CVAT’s advanced image and video annotation tools, we enhance our AI models to accurately identify and address plastic waste for a cleaner world.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cc_card">
+                <a href="https://theoceancleanup.com/" target="_blank">
+                    <div><img src="~/images/Home/oceancleanup.jpeg" alt="img" style="padding:1%; border-radius: 2.5%" /></div>
+                    <div class="cc_card_desc">
+                        <h5>The Ocean Cleanup</h5>
+                        <p>For over ten years, The Ocean Cleanup has been researching, extracting, and monitoring plastic pollution in oceans and rivers globally with millions of kilograms removed to date.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<section class="carousel_body_iii">
+    <div class="bold-text_iii">
+        Implementation
+    </div>
+    <div class="carousel_iii">
+        <div class="slides_iii">
+            <div class="slide_iii active">
+                <img src="~/images/Home/slide-1.jpg" alt="slide" />
+                <div class="slide-info_iii">
+                    <h1>Data Collection</h1>
+                    <p>
+                        Detecting prevalent plastic polymers in marine environments using advanced datasets like MARIDA and Kaggle to train the model.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Implementation")#data_collection'">Learn More &#8250;</button>
+                </div>
+            </div>
+            <div class="slide_iii">
+                <img src="~/images/Home/slide-2.jpg" alt="slide" />
+                <div class="slide-info_iii">
+                    <h1>Model Building</h1>
+                    <p>
+                        Built utilizing MARIDA and Kaggle datasets, powered by APLASTIC-Q, a CNN-based system for detecting and classifying plastic waste.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Implementation")#model_building'">Learn More &#8250;</button>
+                </div>
+            </div>
+            <div class="slide_iii">
+                <img src="~/images/Home/slide-3.jpg" alt="slide" />
+                <div class="slide-info_iii">
+                    <h1>Model Deployment</h1>
+                    <p>
+                        Deployed to process geotagged aerial images from drones, with results displayed on a web-based heatmap for monitoring plastic pollution.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Implementation")#model_deployment'">Learn More &#8250;</button>
+                </div>
+            </div>
+            <div class="slide_iii">
+                <img src="~/images/Home/slide-4.png" alt="slide" />
+                <div class="slide-info_iii">
+                    <h1>Communication</h1>
+                    <p>
+                        Enabling collaboration and data-sharing with organizations and governments to tackle plastic pollution effectively.
+                    </p>
+                    <button onclick="location.href='@Url.Action("Index", "Implementation")#communication'">Learn More &#8250;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="indicators_iii">
+            <div class="indicator-container_iii" data-slide="0">
+                <button class="indicator_iii"></button>
+                <h3 class="carousel-des_iii active">Data Collection</h3>
+            </div>
+            <div class="indicator-container_iii" data-slide="1">
+                <button class="indicator_iii"></button>
+                <h3 class="carousel-des_iii">Model Building</h3>
+            </div>
+            <div class="indicator-container_iii" data-slide="2">
+                <button class="indicator_iii"></button>
+                <h3 class="carousel-des_iii">Model Deployment</h3>
+            </div>
+            <div class="indicator-container_iii" data-slide="3">
+                <button class="indicator_iii"></button>
+                <h3 class="carousel-des_iii">Communication</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ------------------------------------------------------------------------------------- -->
+<div class="bg_info">
+    <h2>for cleaner waters</h2>
+    <p>
+        Utilizing AI and pushing the limits of innovation for cleaner and healthier aquatic environments
+    </p>
+    <button class="btn_lrn" onclick="location.href='@Url.Action("Index", "Innovations")'">DISCOVER</button>
+</div>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<div class="explore_info">
+    <!-- Explore Case Study Text -->
+    <div class="el_desc">
+        <h3 style="font-size: 1.8rem; font-weight: 500; color: #fff;">EXPLORE CASE STUDY</h3>
+    </div>
+
+    <div class="wrapper">
+        <ul class="el_list">
+            <li class="el_item">
+                <div><img src="~/images/Home/el-img-1.png" alt="img" /></div>
+                <div class="el_item_desc">
+                    <h5>Low-cost real-time aerial object detection and GPS location tracking pipeline</h5>
+                    <p>This paper proposes a lightweight, low-cost, and modular approach to real-time object detection and instance tracking, enabling a wide gamut of use cases.</p>
+                </div>
+                <button class="btn_lrn" onclick="window.open('https://www.sciencedirect.com/science/article/pii/S2667393224000139', '_blank')">LEARN MORE</button>
+            </li>
+            <li class="el_item">
+                <div><img src="~/images/Home/el-img-2.png" alt="img" /></div>
+                <div class="el_item_desc">
+                    <h5>APLASTIC-Q: Machine Learning for Aquatic plastic litter detection</h5>
+                    <p>Plastic waste analysis software for drone imagery which was initially developed as a pilot in Cambodia under the scope of a World Bank funded project in 2019.</p>
+                </div>
+                <button class="btn_lrn" onclick="window.open('https://github.com/DFKI-NI/APLASTIC-Q?tab=readme-ov-file', '_blank')">LEARN MORE</button>
+            </li>
+            <li class="el_item">
+                <div><img src="~/images/Home/el-img-3.png" alt="img" /></div>
+                <div class="el_item_desc">
+                    <h5>Aquatic plastic litter detection, classification and quantification</h5>
+                    <p>The APLASTIC-Q system was developed and trained using very high geo-spatial resolution imagery captured from aerial surveys in Cambodia.</p>
+                </div>
+                <button class="btn_lrn" onclick="window.open('https://iopscience.iop.org/article/10.1088/1748-9326/abbd01/meta', '_blank')">LEARN MORE</button>
+            </li>
+            <li class="el_item">
+                <div><img src="~/images/Home/el-img-4.png" alt="img" /></div>
+                <div class="el_item_desc">
+                    <h5>
+                        AI application on plastic bottle monitoring in coastal zone
+                    </h5>
+                    <p>This research aims build an AI to fill the gap on the lack of knowledge in utilizing and applying artificial intelligence in monitoring plastic bottle waste.</p>
+                </div>
+                <button class="btn_lrn" onclick="window.open('http://vnjhm.vn/data/article/1206/6.pdf', '_blank')">LEARN MORE</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="~/js/home_carousel_script.js" asp-append-version="true"></script>

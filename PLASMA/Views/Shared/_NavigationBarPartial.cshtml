@@ -1,0 +1,47 @@
+﻿<link rel="stylesheet" href="~/css/home.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark main_navbar" style="background-color: #000000 !important; box-shadow: none; border: none;">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand ms-5" href="@Url.Action("Index","Home")">
+            <img src="~/images/brandLogo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Left Side Links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link custom-font @(ViewData["ActivePage"] as string == "Home" ? "active" : "")"
+                       href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-font @(ViewData["ActivePage"] as string == "Project" ? "active" : "")"
+                       href="@Url.Action("Index", "Project")">Project</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link custom-font @(ViewData["ActivePage"] as string == "Implementation" ? "active" : "")"
+                       href="@Url.Action("Index", "Implementation")">Implementation</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link custom-font @(ViewData["ActivePage"] as string == "Innovations" ? "active" : "")"
+                       href="@Url.Action("Index", "Innovations")">Innovations</a>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a style="margin-right: 4%" class="nav-link custom-font @(ViewData["ActivePage"] as string == "About" ? "active" : "")"
+                       href="@Url.Action("About", "Home")">About</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
