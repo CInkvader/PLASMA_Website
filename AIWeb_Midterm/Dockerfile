@@ -12,6 +12,9 @@ WORKDIR /app
 
 COPY --from=build /app/out ./
 
+# Set environment variables (optional)
+ENV ASPNETCORE_URLS=http://+:8080
+
 # Expose port 8080 (Render expects this)
 EXPOSE 8080
 
